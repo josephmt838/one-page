@@ -1,14 +1,19 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
+import { Switch, Route } from "react-router-dom";
 
 // import components here
-import MainNav from "../MainNav";
+import OnePage from "../../containers/OnePage";
+import NoMatch from "../../containers/noMatch";
 
 export default class App extends Component {
   render() {
     return (
-      <section>
-        <MainNav />
-      </section>
+      <Fragment>
+        <Switch>
+          <Route path="/" exact component={OnePage} />
+          <Route component={NoMatch} />
+        </Switch>
+      </Fragment>
     );
   }
 }
