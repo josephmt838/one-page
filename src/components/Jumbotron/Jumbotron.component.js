@@ -3,14 +3,18 @@ import PropTypes from "prop-types";
 
 // components
 import JumboForm from "../JumboForm";
+import "./Jumbotron.scss";
 
 const Jumbotron = (props) => {
   const { jumboImg } = props;
   const { mainImg, mainImgAlt } = jumboImg;
 
   return (
-    <section>
-      <img src={mainImg} alt={mainImgAlt} />
+    <section id="jumbotron">
+      <section className="jumbo-left">
+        <img src={mainImg} alt={mainImgAlt} />
+      </section>
+
       <JumboForm />
     </section>
   );
@@ -25,7 +29,7 @@ Jumbotron.propTypes = {
 
 Jumbotron.defaultProps = {
   jumboImg: {
-    mainImg: "https://via.placeholder.com/250",
+    mainImg: "https://via.placeholder.com/600",
     mainImgAlt: "image"
   }
 };

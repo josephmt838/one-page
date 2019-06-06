@@ -1,0 +1,31 @@
+#blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .blog-content {
+    display: flex;
+    width: 80%;
+    margin: 20px auto;
+    .no-border {
+      border: none;
+      .card-body {
+        padding-top: 0;
+      }
+    }
+    .thumbnails {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      .card {
+        display: flex;
+        flex-direction: row;
+        height: 47%;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 10px;
+      }
+    }
+  }
+}

@@ -12,6 +12,7 @@ import {
   InputGroupAddon
 } from "reactstrap";
 import { FaSearch } from "react-icons/fa";
+import "./MainNav.scss";
 
 export default class MainNav extends Component {
   constructor(props) {
@@ -55,13 +56,13 @@ export default class MainNav extends Component {
                 <NavLink href="#contact">Contact</NavLink>
               </NavItem>
             </Nav>
+            <InputGroup>
+              <InputGroupAddon addonType="prepend">
+                <FaSearch color="gray" size="1.6em" />
+              </InputGroupAddon>
+              <Input placeholder="Search" />
+            </InputGroup>
           </Collapse>
-          <InputGroup>
-            <InputGroupAddon addonType="prepend">
-              <FaSearch color="gray" size="1.6em" />
-            </InputGroupAddon>
-            <Input placeholder="search" />
-          </InputGroup>
         </Navbar>
       </section>
     );

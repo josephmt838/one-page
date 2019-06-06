@@ -1,0 +1,14 @@
+#jumbotron {
+  display: flex;
+  justify-content: space-around;
+  min-height: 700px;
+  align-items: center;
+
+  .jumbo-left {
+    min-width: 600px;
+  }
+  form {
+    width: 400px;
+    margin: 10px 20px;
+  }
+}

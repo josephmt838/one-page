@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 import {
   Button,
   Form,
@@ -72,7 +72,7 @@ export default class Example extends Component {
       confirmRegister
     } = this.state;
     return (
-      <Fragment>
+      <Form>
         <h2>Sign up Today!</h2>
         {error && error.length && !confirmRegister && (
           <Alert color="danger">{error}</Alert>
@@ -85,41 +85,39 @@ export default class Example extends Component {
             ** This is a test app, use a unique password **
           </Alert>
         )}
-        <Form>
-          <FormGroup>
-            <Label for="email">Email</Label>
-            <Input
-              type="email"
-              name="email"
-              value={email}
-              onChange={this.inputHandler}
-              id="email"
-            />
-          </FormGroup>
-          <FormGroup>
-            <Label for="password">Password</Label>
-            <Input
-              type="password"
-              name="password"
-              value={password}
-              onChange={this.inputHandler}
-              id="password"
-            />
-          </FormGroup>
-          <FormGroup>
-            <Label for="confirmPassword">Confirm Password</Label>
-            <Input
-              type="password"
-              name="confirmPassword"
-              value={confirmPassword}
-              onChange={this.inputHandler}
-              id="confirmPassword"
-            />
-          </FormGroup>
-          <FormText>* This is a test app, use a unique password</FormText>
-          <Button onClick={this.register}>Submit</Button>
-        </Form>
-      </Fragment>
+        <FormGroup>
+          <Label for="email">Email</Label>
+          <Input
+            type="email"
+            name="email"
+            value={email}
+            onChange={this.inputHandler}
+            id="email"
+          />
+        </FormGroup>
+        <FormGroup>
+          <Label for="password">Password</Label>
+          <Input
+            type="password"
+            name="password"
+            value={password}
+            onChange={this.inputHandler}
+            id="password"
+          />
+        </FormGroup>
+        <FormGroup>
+          <Label for="confirmPassword">Confirm Password</Label>
+          <Input
+            type="password"
+            name="confirmPassword"
+            value={confirmPassword}
+            onChange={this.inputHandler}
+            id="confirmPassword"
+          />
+        </FormGroup>
+        <FormText>* This is a test app, use a unique password</FormText>
+        <Button onClick={this.register}>Submit</Button>
+      </Form>
     );
   }
 }

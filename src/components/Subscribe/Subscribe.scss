@@ -1,0 +1,28 @@
+#subscribe {
+  width: 100%;
+  margin: 60px auto 20px;
+  min-height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .subscribe-border {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+  }
+
+  .subscribe-text {
+    width: 700px;
+    text-align: center;
+    font-size: 36px;
+  }
+  input {
+    width: 360px;
+  }
+  button {
+    height: 40px;
+    width: 240px;
+  }
+}

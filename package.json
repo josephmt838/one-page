@@ -15,7 +15,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "jest --verbose --watchAll",
+    "test": "jest --verbose",
     "eject": "react-scripts eject",
     "lint": "eslint src"
   },
@@ -42,7 +42,6 @@
   },
   "devDependencies": {
     "cross-env": "^5.2.0",
-    "husky": "^2.4.0",
-    "jest": "^24.8.0"
+    "husky": "^2.4.0"
   }
 }
