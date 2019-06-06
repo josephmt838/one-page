@@ -8,6 +8,7 @@ import Advantages from "../components/Advantages";
 import Subscribe from "../components/Subscribe";
 import Blog from "../components/Blog";
 import Pricing from "../components/Pricing";
+import Partners from "../components/Partners";
 
 export default class OnePage extends Component {
   render() {
@@ -20,6 +21,7 @@ export default class OnePage extends Component {
         <Subscribe />
         <Blog />
         <Pricing />
+        <Partners />
       </div>
     );
   }
