@@ -9,6 +9,9 @@ import Subscribe from "../components/Subscribe";
 import Blog from "../components/Blog";
 import Pricing from "../components/Pricing";
 import Partners from "../components/Partners";
+import CallToAction from "../components/CallToAction";
+import Benefits from "../components/Benefits";
+import Footer from "../components/Footer";
 
 export default class OnePage extends Component {
   render() {
@@ -22,6 +25,9 @@ export default class OnePage extends Component {
         <Blog />
         <Pricing />
         <Partners />
+        <CallToAction />
+        <Benefits />
+        <Footer />
       </div>
     );
   }

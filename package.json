@@ -15,8 +15,15 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "jest --verbose --watchAll",
+    "eject": "react-scripts eject",
+    "lint": "eslint src"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && npm test",
+      "pre-push": "npm run lint && npm test"
+    }
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -32,5 +39,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "husky": "^2.4.0",
+    "jest": "^24.8.0"
   }
 }
